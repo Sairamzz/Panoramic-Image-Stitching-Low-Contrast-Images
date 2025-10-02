@@ -2,6 +2,12 @@
 
 This project implements a photomosaicing pipeline for low contrast images (Underwater Image dataser), where contrast enhancement and refined homography estimation are necessary for robust stitching. The workflow enhances image quality with CLAHE, extracts SIFT features, matches them using BFMatcher, refines homographies via optimization, and finally stitches all images into a seamless mosaic.
 
+## Acknowledgments
+
+This project was developed as part of coursework under the guidance of Prof. Hanumant Singh, Department of Electrical and Computer Engineering and Program Director of the Master of Science in Robotics program.
+
+The image dataset used for this project was provided by Prof. Hanumant Singh, and is credited to him.
+
 ## Functions Overview:
 
 1. ``` normalize_image(img) ```
@@ -37,17 +43,15 @@ Runs feature extraction, computes homographies for all image pairs, refines them
 Constructs the final mosaic by chaining sequential homographies to a reference image, warping all input images onto a common canvas, and blending overlaps with weighted averaging. Produces the stitched panorama.
 
 ## Results:
+
 ### 6 Image Dataset:
+
 <img width="806" height="658" alt="image" src="https://github.com/user-attachments/assets/3d2819d3-ad08-42f8-a6a3-6c136843b1c5" />
+
 ### 28 Image Dataset:
+
 <img width="714" height="658" alt="image" src="https://github.com/user-attachments/assets/7a7a19e1-3291-4304-9842-72b75d431bae" />
 
 ## How to run:
 
 clone the repo into your local system and run the python notebook (Change the Image destinations in the data folder accordingly)
-
-## Acknowledgments
-
-This project was developed as part of coursework under the guidance of Prof. Hanumant Singh, Department of Electrical and Computer Engineering and Program Director of the Master of Science in Robotics program.
-
-The image dataset used for this project was provided by Prof. Hanumant Singh, and is credited to him.
