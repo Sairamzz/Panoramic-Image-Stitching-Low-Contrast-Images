@@ -36,6 +36,12 @@ Runs feature extraction, computes homographies for all image pairs, refines them
 
 Constructs the final mosaic by chaining sequential homographies to a reference image, warping all input images onto a common canvas, and blending overlaps with weighted averaging. Produces the stitched panorama.
 
+## Results:
+### 6 Image Dataset:
+<img width="806" height="658" alt="image" src="https://github.com/user-attachments/assets/3d2819d3-ad08-42f8-a6a3-6c136843b1c5" />
+### 28 Image Dataset:
+<img width="714" height="658" alt="image" src="https://github.com/user-attachments/assets/7a7a19e1-3291-4304-9842-72b75d431bae" />
+
 ## How to run:
 
 clone the repo into your local system and run the python notebook (Change the Image destinations in the data folder accordingly)
